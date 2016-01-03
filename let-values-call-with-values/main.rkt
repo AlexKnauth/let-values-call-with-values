@@ -7,7 +7,7 @@
          )
 
 (require racket/function
-         syntax/parse/define
+         (only-in syntax/parse/define define-simple-macro)
          "define-syntax-parser.rkt"
          (for-syntax racket/base
                      syntax/parse))

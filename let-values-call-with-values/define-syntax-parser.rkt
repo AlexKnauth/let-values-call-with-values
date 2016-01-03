@@ -2,7 +2,7 @@
 
 (provide define-syntax-parser)
 
-(require syntax/parse/define
+(require (only-in syntax/parse/define define-simple-macro)
          (for-syntax racket/base
                      syntax/parse
                      ))
